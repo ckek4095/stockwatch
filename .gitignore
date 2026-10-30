@@ -8,4 +8,3 @@ data/
 *.sqlite3-shm
 *.lock
 dist/
-instruct

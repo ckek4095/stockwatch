@@ -1,0 +1,10 @@
+name: tests
+on: [push]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Offline tests"
+        run: python3 -m unittest discover -s tests -v
+      - name: "All tests"
+        run: python3 -m compileall -q stockwatch
